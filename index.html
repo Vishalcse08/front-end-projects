@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lekton:ital,wght@0,400;0,700;1,400&family=Libertinus+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap"
+        rel="stylesheet">
+    <title>TO-DO List</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <div class="text-center pt-[30px] ">
+            <h1 class="font-bold text-[30px]">Free To Do List</h1>
+            <p class="tracking-[1px] pt-[10px]">To Do List Free• Best Free To Do List • No Signup Required • A product
+                by
+                <span class="text-[blue]">
+                    Vishal</span>
+            </p>
+        </div>
+        <div>
+            <div class="md:w-[80%] mx-[auto] mt-[150px] flex md:flex-row flex-col items-center md:items-start">
+                <div class="md:w-[500px] w-[80%] h-[400px] shadow-xl pl-[20px] rounded-[25px]">
+                    <h1 class="text-[20px]"> <span>+</span> Add New Task</h1>
+                    <h4 class="font-regular pt-[30px] pb-[10px]">Task Title</h4>
+                    <input type="text" placeholder="What needs to be done?"
+                        class="md:w-[90%] w-[90%] md:text-[16px] text-[12px] pl-[20px] border-[1px] border-[gray] py-[10px] rounded-[15px] hover:border-[blue] hover:border-[2px] focus:outline-none"
+                        id="task">
+
+                    <h4 class="font-regular pt-[30px] pb-[10px]">Date-Time</h4>
+
+                    <input type="datetime-local" name="date" required placeholder="Due Date-time" id="date"
+                        class="md:w-[90%] text-[gray] w-[90%] md:text-[16px] text-[12px]  px-[20px] pl-[20px] border-[1px] border-[gray] py-[10px] rounded-[15px] hover:border-[blue] hover:border-[2px] focus:outline-none">
+                    <div class="flex items-center text-center justify-center md:w-[90%] w-[90%]">
+                        <button
+                            class="bg-[#7447d1]  py-[10px] cursor-pointer rounded-[15px] mt-[30px] text-[#fff] text-center  md:text-[16px] text-[12px] md:w-[250px] duration-500 ease-in-out hover:bg-purple-800"
+                            id="added"><span class="md:pr-[10px] "> +</span> Add Task</button>
+                        <!-- <button id="see">see</button> -->
+                        <button
+                            class="bg-[#7447d1]  py-[10px] cursor-pointer rounded-[15px] mt-[30px] ml-[10px] text-[#fff] text-center  md:text-[16px] text-[12px] md:w-[250px] duration-500 ease-in-out hover:bg-purple-800"
+                            id="see">See</button>
+                    </div>
+
+                </div>
+                <div class="pl-[100px] w-[100%]">
+                    <div class="flex items-center">
+                        <img src="icons8-calender-64.png" class="w-[40px] pr-[10px] h-[10%]" alt="">
+                        <h1 class="font-semibold text-[23px]"> Today's Tasks</h1>
+
+                    </div>
+                    <div class="w-[80%] h-[100px] rounded-[25px] mt-[30px]">
+                        <div class="flex flex-col justify-between items-center pl-[50px]">
+                            <div
+                                class="flex flex-col justify-between bg-[#BFB9FA] w-[100%] h-[90%]  rounded-[25px] px-[30px] py-[20px] text-[20px]">
+                                <div class="result">
+                                    <p id="para" class=""></p>
+                                </div>
+                                <div id="date1" class="pt-[30px]"></div>
+                            </div>
+
+
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <button
+                                    class="bg-[#7447d1] cursor-pointer md:w-[400px] py-[10px] ml-[60px] rounded-[15px] mt-[30px] text-[#fff] text-center w-[90%] md:text-[16px] text-[12px] duration-500 ease-in-out  hover:bg-purple-800"
+                                    id="save">
+                                    Save</button>
+                            </div>
+
+                            <div
+                                class="bg-[#7447d1] rounded-[125%] mt-[30px]  hover:ml-[10px] hover:rounded-[20px] p-[8px] hover:px-[50px] duration-500 ease-in-out hover:bg-purple-800">
+                                <img src="icons8-dustbin-66.png" alt="" class="w-[30px] h-[30px] cursor-pointer"
+                                    id="remove">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
